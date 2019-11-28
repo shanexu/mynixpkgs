@@ -4,6 +4,7 @@ let
     packageOverrides = pkgs: rec {
       darwin = pkgs.darwin // mydarwin;
       jenv = with pkgs; import ./tools/misc/jenv { inherit stdenv fetchurl makeWrapper; };
+      glibtool = with pkgs; import ./development/tools/misc/glibtool { inherit stdenv fetchurl m4 perl help2man; };
     };
   };
 
