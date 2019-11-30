@@ -9,7 +9,7 @@ stdenv.mkDerivation rec {
   };
   buildPhase =
     ''
-    outdir=$out/share/jenv
+    outdir=$out/libexec
     mkdir -p $outdir
     cp -r * $outdir
     '';
