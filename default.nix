@@ -6,7 +6,7 @@ let
       jenv = pkgs.callPackage ./tools/misc/jenv { };
       glibtool = pkgs.callPackage ./development/tools/misc/glibtool { };
       coreutils = pkgs.callPackage ./tools/misc/coreutils { };
-      coreutils-prefixed-conflict = coreutils.override { withPrefix = true; singleBinary = false; unprefixNoConflict = true; };
+      coreutils-conflict-prefixed = coreutils.override { withPrefix = true; singleBinary = false; unprefixNoConflict = true; };
     };
   };
 
